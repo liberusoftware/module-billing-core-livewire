@@ -34,6 +34,6 @@ final class TaxCalculator extends Component
     {
         Gate::authorize('viewAny', BillingTaxProfile::class);
 
-        return view('billing-core-livewire::tax-calculator');
+        return view('module-billing-core-livewire::tax-calculator');
     }
 }

@@ -15,10 +15,10 @@ final class BillingCoreLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'billing-core-livewire');
-        Livewire::component('billing-core::billing-accounts', BillingAccounts::class);
-        Livewire::component('billing-core::records', BillingCoreRecords::class);
-        Livewire::component('billing-core::currency-converter', CurrencyConverter::class);
-        Livewire::component('billing-core::tax-calculator', TaxCalculator::class);
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-billing-core-livewire');
+        Livewire::component('module-billing-core::billing-accounts', BillingAccounts::class);
+        Livewire::component('module-billing-core::records', BillingCoreRecords::class);
+        Livewire::component('module-billing-core::currency-converter', CurrencyConverter::class);
+        Livewire::component('module-billing-core::tax-calculator', TaxCalculator::class);
     }
 }

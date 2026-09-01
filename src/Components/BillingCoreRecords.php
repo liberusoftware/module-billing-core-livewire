@@ -89,7 +89,7 @@ final class BillingCoreRecords extends Component
         Gate::authorize('viewAny', $model);
         $records = $list->execute($model, $this->teamId());
 
-        return view('billing-core-livewire::billing-core-records', ['records' => $records->items()]);
+        return view('module-billing-core-livewire::billing-core-records', ['records' => $records->items()]);
     }
 
     /** @return class-string<Model> */
