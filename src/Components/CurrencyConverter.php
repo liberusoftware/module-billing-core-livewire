@@ -34,6 +34,6 @@ final class CurrencyConverter extends Component
     {
         Gate::authorize('viewAny', BillingCurrency::class);
 
-        return view('billing-core-livewire::currency-converter');
+        return view('module-billing-core-livewire::currency-converter');
     }
 }

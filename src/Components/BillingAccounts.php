@@ -47,7 +47,7 @@ final class BillingAccounts extends Component
         Gate::authorize('viewAny', BillingAccount::class);
         $teamId = data_get(auth()->user(), 'current_team_id') ?? data_get(auth()->user(), 'currentTeam.id');
 
-        return view('billing-core-livewire::billing-accounts', [
+        return view('module-billing-core-livewire::billing-accounts', [
             'accounts' => $query->execute($teamId !== null ? (int) $teamId : null),
         ]);
     }
